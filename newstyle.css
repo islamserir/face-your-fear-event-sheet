@@ -171,4 +171,101 @@ body {
         transform: translateY(0) rotate(0deg);
     }
 }
+
+/* Mobile Responsive Design */
+@media screen and (max-width: 768px) {
+    .top-content {
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+        padding-top: 150px;
+        color: black;
+        position: relative;
+        top: 50vh;
+    }
+
+    body {
+        background: linear-gradient(to bottom,
+            var(--black) 0%,
+            var(--black) 30%,
+            var(--white) 30%,
+            var(--white) 100%
+        );
+    }
+
+    .content {
+        padding: 0 20px;
+        justify-content: flex-start;
+    }
+
+    .bottom-content {
+        padding: 20px;
+        margin-top: 60vh;
+    }
+
+    .bottom-content h2 {
+        font-size: 1.5rem;
+    }
+
+    .bottom-content ul {
+        font-size: 1rem;
+    }
+
+    .event-title {
+        font-size: 1.8rem;
+        letter-spacing: 2px;
+    }
+
+    .logo {
+        max-width: 100px;
+    }
+
+    .line {
+        top: 120px;
+    }
+
+    /* Adjust floating icons for mobile */
+    .floating-icon {
+        width: 30px;
+        height: 30px;
+    }
+
+    .glass-shape {
+        filter: blur(20px);
+    }
+
+    .shape-1 {
+        width: 150px;
+        height: 150px;
+        top: -75px;
+        left: -75px;
+    }
+
+    .shape-2 {
+        width: 200px;
+        height: 200px;
+        bottom: -100px;
+        right: -100px;
+    }
+}
+
+/* Small phones */
+@media screen and (max-width: 480px) {
+    .top-content {
+        font-size: 1.2rem;
+        padding-top: 120px;
+    }
+
+    .bottom-content h2 {
+        font-size: 1.3rem;
+    }
+
+    .event-title {
+        font-size: 1.5rem;
+    }
+
+    .floating-icon {
+        width: 25px;
+        height: 25px;
+    }
+}
  
