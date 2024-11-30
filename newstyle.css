@@ -1,0 +1,174 @@
+:root {
+    --black: #000000;
+    --white: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    background: linear-gradient(to bottom,
+        var(--black) 0%,
+        var(--black) 50%,
+        var(--white) 50%,
+        var(--white) 100%
+    );
+    overflow-x: hidden;
+}
+
+.logo-container {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 3;
+}
+
+.logo {
+    max-width: 150px;
+    height: auto;
+}
+
+.line {
+    position: fixed;
+    top: 160px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: white;
+    z-index: 2;
+}
+
+.content {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 50px;
+    z-index: 2;
+}
+
+.top-content {
+    color: white;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 50vh;
+    padding-top: 200px;
+}
+
+.bottom-content {
+    color: black;
+    padding: 50px;
+}
+
+.bottom-content h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.bottom-content ul {
+    list-style: none;
+    font-size: 1.2rem;
+    line-height: 1.8;
+}
+
+.bottom-content li {
+    margin-bottom: 15px;
+}
+
+.event-title {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-top: 50px;
+    letter-spacing: 3px;
+}
+
+.signature {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    color: black;
+}
+
+.glass-shape {
+    position: fixed;
+    border-radius: 50%;
+    background: linear-gradient(45deg, #6C63FF, #4CAF50);
+    filter: blur(40px);
+    opacity: 0.1;
+    z-index: 0;
+}
+
+.shape-1 {
+    width: 300px;
+    height: 300px;
+    top: -150px;
+    left: -150px;
+}
+
+.shape-2 {
+    width: 400px;
+    height: 400px;
+    bottom: -200px;
+    right: -200px;
+}
+
+.floating-icons {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.floating-icon {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    opacity: 0.6;
+}
+
+.icon-1 { top: 10%; left: 10%; animation: float 8s infinite ease-in-out; }
+.icon-2 { top: 20%; left: 25%; animation: float 9s infinite ease-in-out 0.5s; }
+.icon-3 { top: 15%; left: 60%; animation: float 7s infinite ease-in-out 1s; }
+.icon-4 { top: 30%; left: 80%; animation: float 10s infinite ease-in-out 1.5s; }
+.icon-5 { top: 40%; left: 5%; animation: float 8s infinite ease-in-out 2s; }
+.icon-6 { top: 50%; left: 30%; animation: float 9s infinite ease-in-out 2.5s; }
+.icon-7 { top: 45%; left: 70%; animation: float 7s infinite ease-in-out 3s; }
+.icon-8 { top: 60%; left: 90%; animation: float 10s infinite ease-in-out 3.5s; }
+.icon-9 { top: 70%; left: 15%; animation: float 8s infinite ease-in-out 4s; }
+.icon-10 { top: 75%; left: 45%; animation: float 9s infinite ease-in-out 4.5s; }
+.icon-11 { top: 80%; left: 75%; animation: float 7s infinite ease-in-out 5s; }
+.icon-12 { top: 85%; left: 35%; animation: float 10s infinite ease-in-out 5.5s; }
+.icon-13 { top: 90%; left: 55%; animation: float 8s infinite ease-in-out 6s; }
+.icon-14 { top: 25%; left: 40%; animation: float 9s infinite ease-in-out 6.5s; }
+.icon-15 { top: 35%; left: 85%; animation: float 7s infinite ease-in-out 7s; }
+.icon-16 { top: 55%; left: 65%; animation: float 10s infinite ease-in-out 7.5s; }
+
+@keyframes float {
+    0% {
+        transform: translateY(0) rotate(0deg);
+    }
+    25% {
+        transform: translateY(-15px) rotate(5deg);
+    }
+    50% {
+        transform: translateY(0) rotate(0deg);
+    }
+    75% {
+        transform: translateY(15px) rotate(-5deg);
+    }
+    100% {
+        transform: translateY(0) rotate(0deg);
+    }
+}
+ 
